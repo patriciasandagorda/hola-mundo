@@ -7,6 +7,8 @@ public class HolaMundoTests {
     @Test(timeout=1000)
     public void queSaludaCorrectamente() {
         HolaMundo holaMundo = new HolaMundo();
-        Assert.assertEquals("Â¡Hola, Kent Beck!", holaMundo.saludar("Kent Beck"));
+        Assert.assertEquals("¡Hola, Kent Beck!", holaMundo.saludar("Kent Beck"));
+        Assert.assertEquals("¡Hola!", holaMundo.saludar());
+        Assert.assertEquals("¡Hola!", holaMundo.saludar(""));
     }
 }
