@@ -4,9 +4,9 @@ package loom.hola_mundo;
  * La clase HolaMundo.
  */
 public class HolaMundo {
-	
+
     /** The Constant VACIO. */
-    private static final String VACIO = ""; 
+    private static final String VACIO = "";
 
     /**
      * Saludar.
@@ -15,10 +15,12 @@ public class HolaMundo {
      * @return String el saludo
      */
     public String saludar(final String persona) {
-        if (persona == VACIO)
-            return "¡Hola!";
-        else
-            return "¡Hola, " + persona + "!";
+        if (persona == VACIO) {
+            return "Â¡Hola!";
+        }
+        else {
+            return "Â¡Hola, " + persona + "!";
+        }
     }
 
     /**
@@ -27,6 +29,6 @@ public class HolaMundo {
      * @return String el saludo
      */
     public String saludar() {
-        return "¡Hola!";
+        return "Â¡Hola!";
     }
 }
