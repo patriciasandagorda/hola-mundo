@@ -17,8 +17,7 @@ public class HolaMundo {
     public String saludar(final String persona) {
         if (persona == VACIO) {
             return "¡Hola!";
-        }
-        else {
+        } else {
             return "¡Hola, " + persona + "!";
         }
     }
